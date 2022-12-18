@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(https://img.freepik.com/free-photo/it-specialist-checking-code-computer-dark-office-night_1098-18699.jpg?w=1060&t=st=1671279687~exp=1671280287~hmac=68224832955980abb831def531c3fa6856d227bac6d74c1a52fff5b51bdd594e);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #CFF5E7;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #A4BE7B;
+    background: #A4BE7B;
+    transition: 1s;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media (max-width : 700px) {
+    .text-box h1 {
+    font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #A4BE7B;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+.about {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    width: 100%;
+    background-image: url(https://media.istockphoto.com/id/1036708146/id/foto/tekstur-kedalaman-violet-latar-belakang-wallpaper-abstrak.jpg?s=612x612&w=0&k=20&c=AuA60pkuMsQSy-eqeyAGuEHjiNwcoel9RqtFs7btc9U=);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}   
+
+h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    color: #fff;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-col {
+    flex-basis: 20%;
+    background: #BB8FCE;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.about-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 12, 139, 0.2);
+}
+
+@media (max-width : 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+.hobbies {
+    color: #fff;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    width: 100%;
+    background-image: url(https://media.istockphoto.com/id/1036708146/id/foto/tekstur-kedalaman-violet-latar-belakang-wallpaper-abstrak.jpg?s=612x612&w=0&k=20&c=AuA60pkuMsQSy-eqeyAGuEHjiNwcoel9RqtFs7btc9U=);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.hobbies-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.hobbies-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hobbies-col p {
+    padding: 0;
+}
+
+.hobbies-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.windows {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    width: 100%;
+    background-image: url(https://img.freepik.com/free-photo/3d-render-abstract-tree-landscape-with-space-sky_1048-14314.jpg?w=1060&t=st=1671289270~exp=1671289870~hmac=95825675e134a9b66b63882de248a375645f5d25ec26bfa6a8d54d3dffea9be8);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.msword {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    width: 100%;
+    background-image: url(https://media.istockphoto.com/id/1138834499/id/foto/desain-latar-webiste-violet-lembut.jpg?s=612x612&w=0&k=20&c=Y4AfOX6mPbYcVdjmQtdL5mS6PabpA71KFOOrcY8TDYs=);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.msexcel {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    width: 100%;
+    background-image: url(https://media.istockphoto.com/id/1345126045/id/foto/teknologi-futuristik-abstrak-grid-ultra-violet-pola-fiber-optic-arrow-laser-led-string-light.jpg?s=612x612&w=0&k=20&c=3k_ILZvVp67AepT66rTMunNkHUkcMih76nLMAhnWf1w=);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.gglslide {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    width: 100%;
+    background-image: url(https://img.freepik.com/free-photo/abstract-blue-fractal-wave-technology-background_1017-15837.jpg?w=1060&t=st=1671281148~exp=1671281748~hmac=4c2d92500bfc8f0ff27d19106a40f09bcb04dd778c9d9d28347788b772f1a306);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.desaingrafis {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    width: 100%;
+    background-image: url(https://img.freepik.com/free-photo/neon-tropical-monstera-leaf-banner_53876-138943.jpg?w=1380&t=st=1671289800~exp=1671290400~hmac=26ed7a8c3d96250d8e91ae143d532bac5cf753b9cceab0130379a859480c8382);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.sosmed {
+    margin: 100px auto;
+    width: 80%;
+    background-image: url(https://img.freepik.com/free-photo/professional-programmer-working-late-dark-office_1098-18705.jpg?w=1060&t=st=1671278594~exp=1671279194~hmac=02db49926b03643f220f88ba84fe2e8bced16bece20838fc78f355b7ad9c1400);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+h3 {
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-color: #5b53bf;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1 {
+    margin-top: 100px;
+    position: relative;
+}
